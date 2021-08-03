@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 40px;
+  padding: 1rem;
+  justify-content: center; }
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: large; }
+
+p, ul, form {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: white; }
+
+.header {
+  justify-items: center; }
+
+#logo {
+  width: 48px; }
+
+#logoIndex {
+  width: 300px;
+  margin: 50px;
+  z-index: 1; }
+
+.banner {
+  background-image: url("img/banner.png");
+  background-size: cover;
+  margin-bottom: 50px; }
+
+.banner h2 {
+  padding: 150px 100px 150px 100px;
+  color: #ffce00; }
+
+.sobreMi {
+  background-color: white;
+  color: white;
+  height: 600px; }
+
+.sobreMi h1 {
+  color: #19A998;
+  margin: 0; }
+
+/*Flexbox*/
+#portafolio {
+  padding: 2rem; }
+
+.portafolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif; }
+
+.portafolio img {
+  width: 350px;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 30px; }
+
+/* GRID HOME*/
+.gridHome {
+  display: grid;
+  text-align: center;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: header;
+  min-height: 100%; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+main p {
+  font-weight: 100;
+  padding: 1rem; }
+
+.miTrabajo {
+  background-color: #534998; }
+
+.miTrabajo h1 {
+  color: #ffce00;
+  padding-top: 20px;
+  margin: 0% auto;
+  text-align: center; }
+
+.footer {
+  background-color: #008187;
+  justify-items: center; }
+
+.iconorrss {
+  width: 24px; }
+
+.sombrero {
+  width: 100px;
+  margin: 25px; }
+
+.footer p {
+  margin: 10px;
+  padding: 1rem;
+  color: #ffce00; }
+
+/* GRID SOBRE MI*/
+.padre {
+  width: 98%;
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "descripcion descripcion descripcion descripcion" "experiencia experiencia estudios estudios" "habilidades habilidades habilidades habilidades"; }
+
+.descripcion {
+  grid-area: descripcion;
+  text-align: justify;
+  color: white; }
+
+.descripcion h1 {
+  background-color: #ffce00;
+  width: 100%;
+  margin: 0; }
+
+.experiencia {
+  grid-area: experiencia;
+  border-radius: 10px;
+  background-color: #008187;
+  padding: 1rem;
+  text-align: justify; }
+
+.estudios {
+  grid-area: estudios;
+  background-color: #534998;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: justify; }
+
+.habilidades {
+  grid-area: habilidades;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: justify; }
+
+.textoDescripcion {
+  color: black; }
+
+.textoExperiencia {
+  padding: 1rem;
+  color: white; }
+
+.hijo h2 {
+  color: white; }
+
+.textoEstudios {
+  padding: 1rem;
+  color: white; }
+
+.headerSobremi {
+  background-color: #342c70; }
+
+.descripcion h1 {
+  color: #534998; }
+
+.habilidades h1 {
+  color: #534998; }
+
+.presentacion {
+  display: flex;
+  align-content: center;
+  height: 100px;
+  background-color: white; }
+
+.presentacion p {
+  text-align: justify;
+  padding: 5rem;
+  margin-right: 200px;
+  color: gray; }
+
+.fotoHome {
+  width: 150px;
+  margin-left: 200px; }
+
+.fotoHome img {
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem; }
+
+/* MEDIA QUERRIES*/
+@media only screen and (max-width: 768px) {
+  .presentacion {
+    display: inline-block; }
+  .presentacion p {
+    text-align: justify;
+    padding: 2rem;
+    margin: 10px 20px 50px 30px; }
+  .fotoHome {
+    width: 250px;
+    margin: 10px 20px 0px 30px; }
+  .miTrabajo h1 {
+    color: #ffce00;
+    padding-top: 60px; } }
+
+@media only screen and (min-width: 768px) {
+  .presentacion {
+    height: 600px; }
+  .presentacion p {
+    text-align: justify;
+    padding: 8rem;
+    margin-right: 200px; }
+  .fotoHome {
+    width: 250px;
+    margin-left: 200px; } }
+
+@media only screen and (max-width: 1024px) {
+  .presentacion {
+    display: inline-block;
+    height: 200px; }
+  .presentacion p {
+    text-align: justify;
+    padding: 1rem; } }
+
+@media only screen and (min-width: 992px) {
+  .presentacion {
+    height: 300px; } }
+
+@media only screen and (max-width: 992px) {
+  .presentacion {
+    height: 550px; } }
+
+/*TRANSITIONS*/
+.imgPortafolio:hover {
+  transform: scale(1.1, 1.1); }
+
+/*BOOTSTRAP*/
+.habilidades {
+  margin: 100px; }
+
+.h1habilidades {
+  color: #534998; }
+
+.barra {
+  margin: 20px 0px 20px 0px;
+  border: 0.5px;
+  border-radius: 10px;
+  height: 50px; }
+
+.menuColor {
+  color: white; }
+
+/*carrusel blog*/
+.blog {
+  background-size: cover;
+  margin-bottom: 50px;
+  z-index: 1;
+  background-color: #f1f1f1; }
+
+.blog a {
+  background-color: white;
+  color: #342c70;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px; }
+
+.blog a:hover {
+  background-color: white;
+  color: #008187;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px; }
+
+.frostBar {
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 30px; }
+
+.contacto {
+  align-content: center;
+  height: 50px;
+  padding: 30px; }
+
+.contacto p {
+  color: #342c70; }
+
+.contacto h1 {
+  color: #19A998;
+  padding: 0 auto; }
+
+.formulario {
+  align-content: center;
+  height: 600px;
+  padding: 30px; }
+
+.formulario boton {
+  background-color: aqua; }
+
+.cv {
+  margin-top: 50px; }
+
+.cv img {
+  width: 150px;
+  padding: 30px; }
+
+.cv h2 {
+  color: #ffce00; }
+
+.datos1 {
+  background-color: #342c70;
+  border-radius: 10px;
+  margin-left: 15px; }
+
+.datos2 {
+  background-color: #008187;
+  border-radius: 10px; }
+
+.texto p {
+  color: gray; }
+
+.porcentajes {
+  margin-top: 50px; }
+
+.botonBlog {
+  padding: 20px;
+  margin: 30px;
+  border-radius: 50px; }
+
+.botonBlog a {
+  text-decoration: none;
+  background-color: #ffce00;
+  color: #342c70;
+  padding: 10px 30px 10px 30px;
+  margin: 30px;
+  width: 200px;
+  border-radius: 50px; }
+
+.botonBlog a:hover {
+  background-color: white;
+  color: #342c70; }
