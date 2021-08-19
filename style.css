@@ -290,12 +290,22 @@ main p {
 
 .contacto h1 {
   color: #19A998;
+  padding: 0 auto;
+  margin-top: 100px; }
+
+.contactoIndex {
+  align-content: center;
+  height: 100px;
+  padding: 20px; }
+
+.contactoIndex h1 {
+  color: #342c70;
   padding: 0 auto; }
 
 .formulario {
   align-content: center;
-  height: 600px;
-  padding: 30px; }
+  height: 500px;
+  padding: 10px; }
 
 .formulario boton {
   background-color: aqua; }
@@ -312,12 +322,11 @@ main p {
 
 .datos1 {
   background-color: #342c70;
-  border-radius: 10px;
-  margin-left: 15px; }
+  margin-top: 10px; }
 
 .datos2 {
   background-color: #008187;
-  border-radius: 10px; }
+  margin-top: 20px; }
 
 .texto p {
   color: gray; }
@@ -325,12 +334,12 @@ main p {
 .porcentajes {
   margin-top: 50px; }
 
-.botonBlog {
+.botonPortafolio {
   padding: 20px;
   margin: 30px;
   border-radius: 50px; }
 
-.botonBlog a {
+.botonPortafolio a {
   text-decoration: none;
   background-color: #ffce00;
   color: #342c70;
@@ -339,6 +348,6 @@ main p {
   width: 200px;
   border-radius: 50px; }
 
-.botonBlog a:hover {
+.botonPortafolio a:hover {
   background-color: white;
   color: #342c70; }
